@@ -3133,4 +3133,10 @@ input, select, textarea {
 			}
 		}
 		
-		
+		img {
+			display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Isso ajuda a centralizar verticalmente também */
+      margin: 0;
+		}
