@@ -3140,3 +3140,11 @@ input, select, textarea {
       height: 100vh; /* Isso ajuda a centralizar verticalmente também */
       margin: 0;
 		}
+.image-container {
+      display: flex; /* Use flexbox to arrange images in a row */
+    }
+
+    .image-container img {
+      width: 50%; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
