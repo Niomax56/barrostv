@@ -3133,12 +3133,4 @@ input, select, textarea {
 			}
 		}
 		
-	
-.image-container {
-      display: flex; /* Use flexbox to arrange images in a row */
-    }
 
-    .image-container img {
-      width: 50%; /* Adjust the width as needed */
-      height: auto; /* Maintain aspect ratio */
-    }
