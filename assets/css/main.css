@@ -3779,5 +3779,25 @@ html, body {
   .gift--orange .gift-top, .gift--orange .gift-bottom {
     background-color: orange;
   }
+
+ .pisca {
+    animation: piscar 1s infinite;
+  }
+  
+  @keyframes piscar {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  p{
+    font-size: 40px;
+  }
   
 
