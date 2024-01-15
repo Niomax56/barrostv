@@ -44,29 +44,16 @@ img {
     height: auto; /* A altura se ajustará automaticamente mantendo a proporção original */
     margin: 10px; /* Adicione margens para espaçamento entre as imagens, se necessário */
 }
-.pulse-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.pulse-button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #4CAF50;
-  border-radius: 5px;
-  opacity: 0;
-  transform: scaleX(2) scaleY(2);
-  transition: all 0.5s ease;
+.button:hover {
+    background-color: #0056b3;
 }
-  
