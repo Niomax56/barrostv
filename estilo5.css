@@ -44,7 +44,7 @@ img {
     height: auto; /* A altura se ajustará automaticamente mantendo a proporção original */
     margin: 10px; /* Adicione margens para espaçamento entre as imagens, se necessário */
 }
-.button {
+.button-pulsante {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -52,8 +52,16 @@ img {
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
+    animation: pulse 2s infinite;
 }
 
-.button:hover {
+.button-pulsante:hover {
     background-color: #0056b3;
+    animation: none;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
