@@ -44,35 +44,29 @@ img {
     height: auto; /* A altura se ajustará automaticamente mantendo a proporção original */
     margin: 10px; /* Adicione margens para espaçamento entre as imagens, se necessário */
 }
-
-
-.video-container {
-  text-align: center; /* Centraliza horizontalmente o conteúdo dentro do contêiner */
+.pulse-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.video-container iframe {
-  display: block; /* Faz o vídeo um bloco para alinhar corretamente o 'auto' das margens */
-  margin: 0 auto; /* Centraliza horizontalmente o vídeo */
-}
-
-
-.image-container {
-  display: flex;
-  justify-content: space-between; /* Distribui as imagens igualmente no espaço disponível */
-}
-
-.image {
-  flex: 1; /* Faz com que as imagens ocupem uma parte igual do espaço disponível */
-  margin: 10px; /* Adicione margens para espaçamento entre as imagens */
-}
-
-button:hover {
-  opacity: 0.5;
-  transition: opacity 2s;
-}
-.caixa-comentários{
+.pulse-button:before {
+  content: "";
   position: absolute;
-  bottom: 100px;
-} 
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  opacity: 0;
+  transform: scaleX(2) scaleY(2);
+  transition: all 0.5s ease;
+}
   
